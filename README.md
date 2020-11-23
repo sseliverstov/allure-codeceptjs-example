@@ -1,1 +1,2 @@
-# allure-codeceptjs-example
+1) npm install
+2) npm build
