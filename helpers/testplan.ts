@@ -15,7 +15,6 @@ class TestPlan extends Helper {
   }
 
   _beforeSuite(suite) {
-    console.log(suite)
     if (this.plan.length) {
       suite.tests = suite.tests.filter(test => {
         const fullName = `${suite.title}:.${test.title}`;

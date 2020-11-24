@@ -2,7 +2,7 @@ exports.config = {
     tests: "./specs/*.spec.ts",
     helpers: {
         Dummy: {
-            require: "./helpers/dummy.ts"
+            require: "./helpers/steps.ts"
         },
         TestPlan: {
             require: "./helpers/testplan.ts"

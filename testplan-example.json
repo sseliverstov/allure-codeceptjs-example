@@ -2,10 +2,10 @@
   "version":"1.0",
   "tests": [
     {
-      "selector": "Codeceptjs Example:.simple passed test"
+      "selector": "Open And Close Issues:.Creating new issue authorized user"
     },
     {
-      "selector": "Codeceptjs Data Example:.Parametrized test with labels | {\"first\":1,\"second\":\"alpha\",\"third\":true}"
+      "selector": "Set Issue Owner:.Parametrized test with labels | {\"name\":\"eroshenkoam\"}"
     }
   ]
 }
