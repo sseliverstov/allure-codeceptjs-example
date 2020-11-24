@@ -30,3 +30,15 @@ Scenario("Closing new issue for authorized user", ({I}) => {
   I.closeIssueWithTitle(ISSUE_TITLE);
   I.shouldSeeIssueWithTitle(ISSUE_TITLE);
 });
+
+
+Scenario("A new issue owner test case", ({I}) => {
+  allure.addLabel("Microservice", "Repository");
+  allure.addLabel("owner", "eroshenkoam");
+  allure.addLabel("AS_ID", "6");
+  I.openIssuesPage(OWNER, REPO);
+  I.createIssueWithTitle(ISSUE_TITLE);
+  I.closeIssueWithTitle(ISSUE_TITLE);
+  I.shouldSeeIssueWithTitle(ISSUE_TITLE);
+});
+
