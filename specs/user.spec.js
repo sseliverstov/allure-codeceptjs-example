@@ -1,6 +1,4 @@
-import * as assert from "assert";
-
-const allure: any = codeceptjs.container.plugins('allure');
+const allure = codeceptjs.container.plugins('allure');
 const OWNER = "allure-framework";
 const REPO = "allure2";
 

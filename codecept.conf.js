@@ -1,11 +1,11 @@
 exports.config = {
-    tests: "./specs/*.spec.ts",
+    tests: "./specs/*.spec.js",
     helpers: {
         Dummy: {
-            require: "./helpers/steps.ts"
+            require: "./helpers/steps.js"
         },
         TestPlan: {
-            require: "./helpers/testplan.ts"
+            require: "./helpers/testplan.js"
         }
     },
     plugins: {
@@ -13,5 +13,4 @@ exports.config = {
             outputDir: "./allure-results"
         }
     },
-    require: ["ts-node/register"]
 };

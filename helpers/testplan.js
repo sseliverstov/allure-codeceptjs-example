@@ -1,7 +1,9 @@
-import * as fs from "fs";
+const Helper = require('@codeceptjs/helper');
+
+const fs = require("fs");
 
 class TestPlan extends Helper {
-  plan: String[] = [];
+  plan = [];
   _init() {
     const path = process.env.ALLURE_TESTPLAN_PATH;
     if (path && fs.existsSync(path)) {
@@ -24,4 +26,4 @@ class TestPlan extends Helper {
   }
 }
 
-export = TestPlan;
+module.exports = TestPlan;
